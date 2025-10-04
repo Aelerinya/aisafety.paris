@@ -1,6 +1,6 @@
 # AI Safety Paris
 
-AI Safety Paris is a community of people in Paris working on AI Safety, AI Governance, AI Alignment, and related fields. This page is a resource for anyone interested in working in AI Safety in Paris or meeting the community.
+AI Safety Paris is the community of people in Paris working on AI Safety, AI Governance, AI Alignment, and related fields. This page is a resource for anyone interested in working in AI Safety in Paris or meeting the community.
 
 To get to know the community, the best way is to [book a call with Lucie](#book-call), the local AI Safety community builder. She can introduce you to people and invite you to private communication groups and events.
 

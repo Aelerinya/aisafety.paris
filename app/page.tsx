@@ -12,26 +12,62 @@ export default function Home() {
     })();
   }, []);
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto">
-        <header className="text-center mb-16 pb-12 border-b border-gray-200 dark:border-gray-700">
-          <div className="flex justify-center mb-6">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
+      {/* Full-width banner */}
+      <header className="relative w-full mb-8 sm:mb-16">
+        {/* Banner Image */}
+        <div className="relative h-[300px] sm:h-[500px] overflow-hidden">
             <Image
-              src="/logo.png"
-              alt="AI Safety Paris"
-              width={120}
-              height={120}
-              className="w-24 h-24 sm:w-32 sm:h-32"
+              src="/ai_action_summit.jpeg"
+              alt="AI Action Summit"
+              fill
+              className="object-cover object-center"
               priority
             />
+            {/* Overlay gradient for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70"></div>
+
+            {/* Content over banner - Logo and Title only on mobile */}
+            <div className="relative h-full flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
+              <div className="flex justify-center mb-4 sm:mb-6">
+                <div className="bg-white rounded-full p-4 sm:p-8 shadow-2xl">
+                  <Image
+                    src="/logo.png"
+                    alt="AI Safety Paris"
+                    width={120}
+                    height={120}
+                    className="w-16 h-16 sm:w-24 sm:h-24"
+                  />
+                </div>
+              </div>
+              <h1 className="text-4xl sm:text-6xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">
+                AI Safety Paris
+              </h1>
+              {/* Paragraphs only visible on larger screens */}
+              <p className="hidden sm:block text-lg text-white mb-4 leading-relaxed max-w-3xl drop-shadow-md">
+                AI Safety Paris is the community of people in Paris working on AI Safety, AI Governance, AI Alignment, and related fields. This page is a resource for anyone interested in working in AI Safety in Paris or meeting the community.
+              </p>
+              <p className="hidden sm:block text-base text-white leading-relaxed max-w-3xl drop-shadow-md">
+                To get to know the community, the best way is to{" "}
+                <a
+                  href="#book-call"
+                  className="text-blue-300 hover:text-blue-200 hover:underline font-semibold"
+                >
+                  book a call with Lucie
+                </a>
+                , the local AI Safety community builder. She can introduce you to people and invite you to private communication groups and events.
+              </p>
+            </div>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-            AI Safety Paris
-          </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-            AI Safety Paris is a community of people in Paris working on AI Safety, AI Governance, AI Alignment, and related fields. This page is a resource for anyone interested in working in AI Safety in Paris or meeting the community.
+
+        </header>
+
+        {/* Paragraphs below banner on mobile only */}
+        <div className="sm:hidden px-4 pb-6 text-center">
+          <p className="text-base text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+            AI Safety Paris is the community of people in Paris working on AI Safety, AI Governance, AI Alignment, and related fields. This page is a resource for anyone interested in working in AI Safety in Paris or meeting the community.
           </p>
-          <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
             To get to know the community, the best way is to{" "}
             <a
               href="#book-call"
@@ -41,8 +77,9 @@ export default function Home() {
             </a>
             , the local AI Safety community builder. She can introduce you to people and invite you to private communication groups and events.
           </p>
-        </header>
+        </div>
 
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <main className="space-y-16">
           {/* Events */}
           <section className="pb-12 border-b border-gray-200 dark:border-gray-700">
@@ -249,7 +286,7 @@ export default function Home() {
           </section>
 
           {/* Book a call */}
-          <section id="book-call" className="pb-12">
+          <section id="book-call">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               Book a call with Lucie
             </h2>
@@ -271,8 +308,8 @@ export default function Home() {
           </section>
         </main>
 
-        {/* Calendar - Full width breakout */}
-        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-12">
+        {/* Calendar - Full width section */}
+        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] pt-4 pb-12 mb-12">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="w-full h-[700px]">
               <Cal
@@ -285,7 +322,7 @@ export default function Home() {
           </div>
         </div>
 
-        <footer className="text-center mt-12 text-gray-600 dark:text-gray-400 text-sm space-y-2">
+        <footer className="text-center mt-12 pb-12 text-gray-600 dark:text-gray-400 text-sm space-y-2">
           <p>For feedback on this website, contact Lucie Philippon at lucie.philippon@proton.me</p>
           <p>
             <a
