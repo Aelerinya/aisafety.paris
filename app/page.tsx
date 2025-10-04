@@ -12,16 +12,26 @@ export default function Home() {
     })();
   }, []);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+    <div className="min-h-screen bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto">
+        <header className="text-center mb-16 pb-12 border-b border-gray-200 dark:border-gray-700">
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/logo.png"
+              alt="AI Safety Paris"
+              width={120}
+              height={120}
+              className="w-24 h-24 sm:w-32 sm:h-32"
+              priority
+            />
+          </div>
+          <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
             AI Safety Paris
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-4">
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
             AI Safety Paris is a community of people in Paris working on AI Safety, AI Governance, AI Alignment, and related fields. This page is a resource for anyone interested in working in AI Safety in Paris or meeting the community.
           </p>
-          <p className="text-base text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
             To get to know the community, the best way is to{" "}
             <a
               href="#book-call"
@@ -33,10 +43,10 @@ export default function Home() {
           </p>
         </header>
 
-        <main className="space-y-10">
+        <main className="space-y-16">
           {/* Events */}
-          <section className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 sm:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Events</h2>
+          <section className="pb-12 border-b border-gray-200 dark:border-gray-700">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Events</h2>
 
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
               Public events are announced in:
@@ -107,50 +117,50 @@ export default function Home() {
           </section>
 
           {/* AI Safety Organizations */}
-          <section className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 sm:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">AI Safety Organizations</h2>
-            <p className="text-sm text-gray-600 dark:text-gray-400 italic mb-6">
+          <section className="pb-12 border-b border-gray-200 dark:border-gray-700">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">AI Safety Organizations</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 italic mb-8">
               Paris has multiple organizations doing work relevant for AI safety. Them being listed here does not represent an endorsement on their part of all the opinions expressed on this site or in the AI safety community.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
               <a
                 href="https://www.securite-ia.fr/en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md transition-shadow"
+                className="flex items-center justify-center hover:opacity-75 transition-opacity"
               >
-                <Image src="/cesia-logo.svg" alt="Centre pour la Sécurité de l'IA" width={150} height={48} className="h-12 w-auto" />
+                <Image src="/cesia-logo.svg" alt="Centre pour la Sécurité de l'IA" width={120} height={40} className="h-10 w-auto" />
               </a>
               <a
                 href="https://gpai-policy-lab.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md transition-shadow bg-white dark:bg-white"
+                className="flex items-center justify-center hover:opacity-75 transition-opacity"
               >
-                <Image src="/gpai-logo-dark.png" alt="General-Purpose AI Policy Lab" width={150} height={48} className="h-12 w-auto" />
+                <Image src="/gpai-logo-dark.png" alt="General-Purpose AI Policy Lab" width={120} height={40} className="h-10 w-auto" />
               </a>
               <a
                 href="https://www.safer-ai.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md transition-shadow"
+                className="flex items-center justify-center hover:opacity-75 transition-opacity"
               >
-                <Image src="/saferai-logo.svg" alt="Safer AI" width={150} height={48} className="h-12 w-auto" />
+                <Image src="/saferai-logo.svg" alt="Safer AI" width={120} height={40} className="h-10 w-auto" />
               </a>
               <a
                 href="https://pauseia.fr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md transition-shadow bg-white dark:bg-white"
+                className="flex items-center justify-center hover:opacity-75 transition-opacity"
               >
-                <Image src="/pauseia-logo-dark.svg" alt="Pause IA" width={150} height={48} className="h-12 w-auto" />
+                <Image src="/pauseia-logo-dark.svg" alt="Pause IA" width={120} height={40} className="h-10 w-auto" />
               </a>
             </div>
           </section>
 
           {/* Offices */}
-          <section className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 sm:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Offices</h2>
+          <section className="pb-12 border-b border-gray-200 dark:border-gray-700">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Offices</h2>
             <p className="text-gray-700 dark:text-gray-300">
               There are now shared AI Safety offices in the north of Paris. We have free desks,
               so feel free to visit for a day or a week! For more info, contact me:{" "}
@@ -164,8 +174,8 @@ export default function Home() {
           </section>
 
           {/* Communication */}
-          <section className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 sm:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          <section className="pb-12 border-b border-gray-200 dark:border-gray-700">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               Communication
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-3">
@@ -208,8 +218,8 @@ export default function Home() {
 
 
           {/* More resources */}
-          <section className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 sm:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          <section className="pb-12 border-b border-gray-200 dark:border-gray-700">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               More resources
             </h2>
             <ul className="space-y-2 text-gray-700 dark:text-gray-300">
@@ -239,8 +249,8 @@ export default function Home() {
           </section>
 
           {/* Book a call */}
-          <section id="book-call" className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 sm:p-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          <section id="book-call" className="pb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               Book a call with Lucie
             </h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
@@ -258,7 +268,13 @@ export default function Home() {
             <p className="text-gray-700 dark:text-gray-300 mb-6">
               You're welcome to schedule a call with me any time! We can chat about your career plans, the community, or anything else related to AI Safety in Paris.
             </p>
-            <div className="w-full h-[600px]">
+          </section>
+        </main>
+
+        {/* Calendar - Full width breakout */}
+        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mb-12">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full h-[700px]">
               <Cal
                 namespace="intro-paris-ai-safety"
                 calLink="lucie-philippon/intro-paris-ai-safety"
@@ -266,8 +282,8 @@ export default function Home() {
                 config={{ layout: "month_view" }}
               />
             </div>
-          </section>
-        </main>
+          </div>
+        </div>
 
         <footer className="text-center mt-12 text-gray-600 dark:text-gray-400 text-sm space-y-2">
           <p>For feedback on this website, contact Lucie Philippon at lucie.philippon@proton.me</p>
