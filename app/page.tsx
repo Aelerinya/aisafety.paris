@@ -159,7 +159,7 @@ export default function Home() {
             <p className="text-sm text-gray-600 dark:text-gray-400 italic mb-8">
               Paris has multiple organizations doing work relevant for AI safety. Them being listed here does not represent an endorsement on their part of all the opinions expressed on this site or in the AI safety community.
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 justify-items-center">
               <a
                 href="https://www.securite-ia.fr/en"
                 target="_blank"
@@ -167,14 +167,6 @@ export default function Home() {
                 className="flex items-center justify-center hover:opacity-75 transition-opacity"
               >
                 <Image src="/cesia-logo.svg" alt="Centre pour la Sécurité de l'IA" width={120} height={40} className="h-10 w-auto" />
-              </a>
-              <a
-                href="https://gpai-policy-lab.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center hover:opacity-75 transition-opacity"
-              >
-                <Image src="/gpai-logo-dark.png" alt="General-Purpose AI Policy Lab" width={120} height={40} className="h-10 w-auto" />
               </a>
               <a
                 href="https://www.safer-ai.org/"

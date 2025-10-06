@@ -24,7 +24,6 @@ To get to know the community, the best way is to [book a call with Lucie](#book-
 Paris has multiple organizations doing work relevant for AI safety. Them being listed here does not represent an endorsement on their part of all the opinions expressed on this site or in the AI safety community.
 
 - [Centre pour la Sécurité de l'IA](https://www.securite-ia.fr/en)
-- [General-Purpose AI Policy Lab](https://gpai-policy-lab.org/)
 - [Safer AI](https://www.safer-ai.org/)
 - [Pause IA](https://pauseia.fr/)
 
