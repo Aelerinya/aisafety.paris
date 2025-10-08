@@ -99,6 +99,15 @@ export default function Home() {
                 >
                   Altruisme Efficace France Events Calendar
                 </a>
+                {" "}and{" "}
+                <a
+                  href="https://lu.ma/altruismeefficaceparis"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  AE Paris Calendar
+                </a>
                 <br />
                 <span className="text-sm text-gray-600 dark:text-gray-400 ml-4">
                   Not all focused on AI Safety, but people in AI Safety regularly go there.

@@ -8,7 +8,7 @@ To get to know the community, the best way is to [book a call with Lucie](#book-
 
 ### Public events are announced in:
 
-- [Altruisme Efficace France Events Calendar](https://lu.ma/altruismeefficacefrance)
+- [Altruisme Efficace France Events Calendar](https://lu.ma/altruismeefficacefrance) and [AE Paris Calendar](https://luma.com/altruismeefficaceparis)
   *Not all focused on AI Safety, but people in AI Safety regularly go there. I especially recommend the monthly English-speaking meetup*
 - [Centre pour la Sécurité de l'IA · Events Calendar](https://lu.ma/CeSIA)
 - The [Sûreté de l'IA Discord server](https://discord.gg/KjZHTyGWjQ)
