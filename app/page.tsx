@@ -141,7 +141,7 @@ export default function Home() {
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
               Notable upcoming events:
             </h3>
-            <ul className="space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+            {/* <ul className="space-y-2 text-gray-700 dark:text-gray-300 mb-4">
               <li>
                 •{" "}
                 <a
@@ -154,11 +154,13 @@ export default function Home() {
                 </a>{" "}
                 Oct 31st to Nov 2nd 2025, a retreat that usually has many local AI researchers.
               </li>
-            </ul>
+            </ul> */}
+
+            <p className="my-2">None currently scheduled.</p>
 
             <p className="text-gray-700 dark:text-gray-300 text-sm italic">
               There are lots of private ad-hoc event happening in the AI Safety community. Contact
-              me directly for more info.
+              Lucie directly for more info.
             </p>
           </section>
 
@@ -186,6 +188,14 @@ export default function Home() {
                 <Image src="/saferai-logo.svg" alt="Safer AI" width={120} height={40} className="h-10 w-auto" />
               </a>
               <a
+                href="https://www.ml4good.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center hover:opacity-75 transition-opacity"
+              >
+                <Image src="/ml4good_logo.png" alt="ML4Good" width={120} height={40} className="h-10 w-auto" />
+              </a>
+              <a
                 href="https://pauseia.fr/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -193,15 +203,38 @@ export default function Home() {
               >
                 <Image src="/pauseia-logo-dark.svg" alt="Pause IA" width={120} height={40} className="h-10 w-auto" />
               </a>
+              <a
+                href="https://foreview.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center hover:opacity-75 transition-opacity"
+              >
+                <Image src="/foreview.svg" alt="Foreview" width={120} height={40} className="h-10 w-auto" />
+              </a>
             </div>
           </section>
 
           {/* Offices */}
           <section className="pb-12 border-b border-gray-200 dark:border-gray-700">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Offices</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Paris AI Safety Office</h2>
             <p className="text-gray-700 dark:text-gray-300">
-              There are now shared AI Safety offices in the north of Paris. We have free desks,
-              so feel free to visit for a day or a week! For more info, contact me:{" "}
+              There's now a physical AI Safety office space in Paris, shared between Safer AI, CeSIA, ML4Good, and some independent researchers.
+            </p>
+
+            <p className="text-gray-700 dark:text-gray-300 mt-2">
+              If you want to join us, be it for a day, a week, or long term, you can feel this {" "}
+              <a
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfJx_jjo2kwsE_OkpvElE0_OsL-R0QUVlciDhqoWQrU1LbIVA/viewform?usp=sharing&ouid=105437227640522818644">
+                  expression of interest
+                </a>
+                . We'll get back to you within a few days.
+            </p>
+
+            <p className="text-gray-700 dark:text-gray-300 mt-2">
+              For more information, contact Lucie at{" "}
               <a
                 href="mailto:lucie.philippon@proton.me"
                 className="text-blue-600 dark:text-blue-400 hover:underline"
@@ -247,10 +280,7 @@ export default function Home() {
               </li>
             </ul>
             <p className="text-sm text-gray-600 dark:text-gray-400 italic mb-2">
-              There is no centralized communication channel for people currently working in AI Safety.
-            </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              TODO: create a public group chat
+              There is currently no public communication channel for people currently working in AI Safety in Paris.
             </p>
           </section>
 
@@ -284,6 +314,9 @@ export default function Home() {
                 </a>
               </li>
             </ul>
+            <p className="text-sm text-gray-600 dark:text-gray-400 italic mt-2">
+              Works in progress. Authored by Lucie
+            </p>
           </section>
 
           {/* Book a call */}
@@ -301,7 +334,7 @@ export default function Home() {
               >
                 Lucie
               </a>
-              , a former software engineer who's been working in AI policy and community building since 2023. I know most of the people in the Parisian AI Safety community, so I can make introductions and invite you to the private communication groups and private events.
+              , the author of this website. I'm a former software engineer who's been working in AI policy and community building since 2023. I know most of the people in the Parisian AI Safety community, so I can make introductions and invite you to the private communication groups and private events.
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-6">
               You're welcome to schedule a call with me any time! We can chat about your career plans, the community, or anything else related to AI Safety in Paris.
